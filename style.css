@@ -1,0 +1,151 @@
+body {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 17px;
+  color: #4a4a4a;
+  background-image: url('images/pattern.gif');
+  background-repeat: repeat;
+}
+
+.header {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.header-left,
+.header-right {
+  flex: 1 0 50%;
+}
+
+.header-left {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: skew(15deg, -15deg);
+}
+
+.header-right {
+/*  background-color: #FAFAFA;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+.cta-card {
+  background: white;
+  box-shadow: 1px 2px 6px rgba(0,0,0,0.2);
+  position: relative;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.cta-card img {
+  position: absolute;
+}
+
+.cta-card a {
+  color: #4a4a4a;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cta-card a:hover {
+  color: #F90B44;
+}
+
+.charlie-head {
+  top: -60px;
+  left: 50%;
+  transform: translateX(-60%);
+  z-index: -1;
+  width: 70px;
+
+}
+
+.charlie-left,
+.charlie-right {
+  top: 20px;
+  width: 20px;
+}
+
+
+.charlie-right {
+  right: -9px;
+}
+
+.charlie-left {
+  left: -9px;
+}
+
+
+.highlight-box {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 25px;
+  z-index: 1;
+}
+
+.highlight-box:before {
+  position: absolute;
+  content: '';
+  height: 5px;
+  width: 100%;
+  bottom: 3px;
+  z-index: -1;
+}
+
+.highlight-box-yellow:before {
+  background-color: rgba(245, 207, 82, 0.4);
+}
+
+.highlight-box-turquoise:before {
+  background-color: rgba(42, 200, 195, 0.4);
+}
+
+.cta-take-survey {
+  background-color: #F90B44;
+  color: #FAFAFA;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 6px rgba(0,0,0,0.2);
+  margin: 0 50px;
+}
+
+.cta-take-survey:hover {
+  background-color: #FAFAFA;
+  color: #F90B44;
+  cursor: pointer;
+}
+
+.cta-take-survey:hover:before,
+.cta-take-survey:hover:after {
+  content: " 🔥 ";
+}
+
+.cta-take-survey + p {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.rose {
+  color: #F90B44;
+}
+
+@media (max-width: 769px) {
+  .header {
+    flex-direction: column-reverse;
+  }
+  .header-right {
+    margin-top: 70px;
+    padding: 0 20px;
+  }
+  .header-left {
+    transform: skew(0);
+    min-height: 30vh !important;
+    margin-top: 20px;
+  }
+
+}
