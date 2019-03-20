@@ -202,8 +202,7 @@ a.cta-take-survey {
 
 .survey-container iframe {
   height: calc(100vh - 110px) !important;
-  overflow-y: scroll !important;
-  -webkit-overflow-scrolling: touch !important;
+  -webkit-overflow-scrolling: touch;
 }
 
 .survey-container {
