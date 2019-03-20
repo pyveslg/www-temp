@@ -211,3 +211,7 @@ a.cta-take-survey {
   align-items: center;
   padding: 50px 10px;
 }
+
+.survey-container-big {
+  min-height: 100% !important;
+}
