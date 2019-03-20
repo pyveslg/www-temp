@@ -6,12 +6,15 @@
     <title>💡La Boîte de Charlie x Novexpat need you!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <div class="header">
       <div class="header-left" style="background-image:url('images/workshop.jpeg')">
-
+        <div class="survey-container d-block d-sm-none" data-aos="fade-up" id="survey-container">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeaSjfEhmqU5PTHPyJR-Y4iaCgY0AZ1BMYSt6vXC5XtzjgLOg/viewform?embedded=true" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
       </div>
       <div class="header-right">
         <div class="cta-card">
@@ -21,7 +24,8 @@
           <p><em>Once upon a time…</em></p>
           <div style="margin-bottom: 10px;"><strong><span class="highlight-box highlight-box-yellow" style="margin-top: 5px;"><a href="https://www.laboitedecharlie.com/" target="_blank">La Boîte de Charlie</a></span></strong> & <strong><span class="highlight-box highlight-box-turquoise"><a href="https://www.novexpat.com/en/programmes/frenchbooster_programme" target="_blank">Novexpat</a></span></strong></div>
           <p>eventually met and…<br/>had such a mutual crush! 😍🤩<br/><br/>They decided to find a way to start mixing their shared passion and experience for <span class="rose">teaching the French language and culture to expats’ kids</span> in Paris.<br/><br/>They brainstormed and finally came up with a couple of exciting ideas for your children!<br/><br/>Will you share their enthusiasm?</p>
-          <a class="cta-take-survey" data-toggle="modal" data-target="#survey">TAKE THE SURVEY</a>
+          <a class="cta-take-survey d-none d-sm-block" data-toggle="modal" data-target="#survey">TAKE THE SURVEY</a>
+          <a data-scroll href="#survey-container" class="cta-take-survey d-block d-sm-none aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">TAKE THE SURVEY</a>
           <p><span style="text-decoration: underline">Note:</span> it will take you a maximum of 5mn!</p>
         </div>
       </div>
@@ -48,8 +52,23 @@
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="plugins/smooth-scroll.polyfills.min.js"></script>
+    <script type="text/javascript">
+      console.log($('a[href*="#"]'));
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 500,
+        speedAsDuration: true
+      });
+    </script>
+    <script>
+      AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+      });
+    </script>
   </body>
 </html>
 

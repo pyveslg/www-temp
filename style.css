@@ -112,6 +112,7 @@ body {
   display: block;
 }
 
+.cta-take-survey:hover,
 a.cta-take-survey:hover {
   background-color: #FAFAFA !important;
   color: #F90B44 !important;
@@ -123,6 +124,7 @@ a.cta-take-survey:hover {
   content: " 🔥 ";
 }
 
+.cta-take-survey,
 a.cta-take-survey {
   background-color: #F90B44 !important;
   color: #FAFAFA !important;
@@ -188,10 +190,24 @@ a.cta-take-survey {
   background-color: white;
   border-radius: 6px;
   max-width: 550px;
-  overflow: hidden;
+}
+
+.survey-container iframe,
+.modal-body iframe {
+  width: 100% !important;
 }
 
 .modal-body iframe {
-  width: 100% !important;
   height: calc(100vh - 160px) !important;
+}
+
+.survey-container iframe {
+  height: calc(100vh - 110px) !important;
+}
+
+.survey-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10px;
 }
