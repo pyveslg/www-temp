@@ -163,7 +163,6 @@ a.cta-take-survey {
   height: 100%;
   z-index: 1050;
   background: rgba(0,0,0,.6);
-  overflow: scroll;
 }
 
 .modal-nov-container {
