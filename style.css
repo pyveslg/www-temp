@@ -140,7 +140,7 @@ a.cta-take-survey {
   color: #F90B44;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 992px) {
   .header {
     flex-direction: column-reverse;
   }
