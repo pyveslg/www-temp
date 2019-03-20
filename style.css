@@ -105,23 +105,27 @@ body {
 }
 
 .cta-take-survey {
-  background-color: #F90B44;
-  color: #FAFAFA;
   padding: 10px 20px;
   border-radius: 4px;
   box-shadow: 1px 2px 6px rgba(0,0,0,0.2);
   margin: 0 50px;
+  display: block;
 }
 
-.cta-take-survey:hover {
-  background-color: #FAFAFA;
-  color: #F90B44;
+a.cta-take-survey:hover {
+  background-color: #FAFAFA !important;
+  color: #F90B44 !important;
   cursor: pointer;
 }
 
 .cta-take-survey:hover:before,
 .cta-take-survey:hover:after {
   content: " 🔥 ";
+}
+
+a.cta-take-survey {
+  background-color: #F90B44 !important;
+  color: #FAFAFA !important;
 }
 
 .cta-take-survey + p {
